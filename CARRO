@@ -1,0 +1,73 @@
+package projetoAV1;
+
+public class Carro {
+    private String marca;
+    private float motor;
+    private String cor;
+    private String combustivel;
+    private Double Km;
+    private boolean status = false;
+
+    
+    public Carro() 
+    {
+    	
+    }
+    
+    public Carro(String marca, float motor, String cor, String combustivel, Double Km) {
+        this.marca=marca;
+        this.motor=motor;
+        this.cor=cor;
+        this.combustivel=combustivel;
+        this.Km=Km;
+
+    }
+
+    public Double getQuilometragem() {
+        return Km;
+    }
+    public void setQuilometragem( Double Km)
+    {
+        this.Km=Km;
+    }
+
+	public String getmarca() {
+		return marca;
+	}
+
+	public void setmarca(String marca) {
+		this.marca = marca;
+	}
+
+	public float getMotor() {
+		return motor;
+	}
+
+	public void setMotor(float motor) {
+		this.motor = motor;
+	}
+
+	public String getCor() {
+		return cor;
+	}
+
+	public void setCor(String cor) {
+		this.cor = cor;
+	}
+
+	public String getCombustivel() {
+		return combustivel;
+	}
+
+	public void setCombustivel(String combustivel) {
+		this.combustivel = combustivel;
+	}
+	
+	
+	void Alugarcarro()
+	{
+		System.out.println("Carro Alugado");
+		
+	}
+    
+}
