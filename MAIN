@@ -1,0 +1,104 @@
+package projetoAV1;
+import java.util.ArrayList;
+import java.util.Scanner;
+public class main {
+    public static void main (String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int OP, A;
+        
+        System.out.println("Bem-vindo a locadora APS Veiculos, você deseja alugar um carro?");
+        System.out.println("1 - Sim");
+        System.out.println("2 - Não");
+        OP = sc.nextInt();
+        sc.nextLine();
+        if (OP == 1) {
+            //Cadastro
+           Cliente a = new Cliente(); 
+           String clientes []=new String[20]; 
+           System.out.println("Digite o nome:");
+           	a.getNome();sc.nextLine();
+            System.out.println("Digite o cpf:");
+            a.getCpf();sc.nextLine();
+            System.out.println("Digite o endereço:");
+            a.getEndereco();sc.hasNextLine();
+            System.out.println("Digite o RG:");
+            a.getRg();sc.nextLine();sc.nextLine();
+            System.out.println("digite seu telefone:");
+            a.getTelefone();sc.nextLine();
+            System.out.println("qual sua idade:");
+            a.getIdade();sc.nextLine();
+            
+            
+    }
+        else if(OP==2)
+        {
+        	System.out.println("Obrigado,volte sempre!");
+        }
+                do {
+        		System.out.println("1 -Carros Disponíveis");
+                System.out.println("2 -Carros Alugados");
+                System.out.println("3- Conheça nossos Clientes");
+                System.out.println("4-voltar");
+                A = sc.nextInt();      
+
+            if (A == 1) {
+
+                //totaldecarros
+            	Carro B = new Carro();
+                String carros[] = new String[20];
+                    carros[0] = ("1-Fiat Pálio, 1.0f, Prata, Totalflex, 50.000km");
+                    carros[1] = ("2-Fiat Pálio, 1.0f, Prata, Totalflex, 50.000km");
+                    carros[2] = ("3-Fiat Pálio, 1.0f, Prata, Totalflex, 50.000km");
+                    carros[3] = ("4-Hyundai HB20, 1.6f, Branco, Totalflex, 40.000km");
+                    carros[4] = ("5-Hyundai HB20, 1.6f, Branco, Totalflex, 40.000km");
+                    carros[5] = ("6-Volkswagem Gol, 1.0f, Preto, Gasolina, 55.000km");
+                    carros[6] = ("7-Volkswagem Gol, 1.0f,Preto,Gasolina, 55.000km");
+                    carros[7] = ("8-Volkswagem Gol, 1.0f,Preto,Gasolina, 55.000km");
+                    carros[8] = ("9-Volkswagem Gol, 1.0f, Preto, Gasolina, 55.000km");
+                    carros[9] = ("10-Volkswagem Gol, 1.0f, Preto, Gasolina, 55.000km");
+                    carros[10] = ("11-GM Camaros, 3.0f, Amarelo, Totalflex, 7.000km");
+                    carros[11] = ("12-GM Camaros, 3.0f, Amarelo, Totalflex, 7.000km");
+                    carros[12] = ("13-GM Camaros, 3.0f, Amarelo, Totalflex, 7.000km");
+                    carros[13] = ("14-Ford Fusion, 2.0f, Preto, Totalflex, 15.000km");
+                    carros[14] = ("15-Ford Fusion, 2.0f, Preto, Totalflex, 15.000km");
+                    carros[15] = ("16-Dodge Viper, 8.3f, Azul, Gasolina, 5.000km");
+                    carros[16] = ("17-Dodge Viper, 8.3f, Azul, Gasolina, 5.000km");
+                    carros[17] = ("18-Fiat UNO, 1.0f, Branco, Totalflex, 39.000km");
+                    carros[18] = ("19-Chevrolet Cobalt, 1.8f, Vermelho, Totalflex, 34.000km");
+                    carros[19] = ("20-Chevrolet Cobalt, 1.8f, Vermelho, Totalflex, 34.000km");
+                    for (int i = 0; i<20; i++)
+                    {
+                        System.out.println(carros[i]);
+                    }
+                   
+                    System.out.println("Qual o Nº do carro que deseja alugar?");
+                    sc.nextInt();B.Alugarcarro();
+                    
+                    
+                       
+                    
+                }
+//carrosalugados
+            else if (A == 2)
+            {
+
+
+            }
+            
+ //ClientesAlugando           
+            else if(A==3)
+            {
+                Cliente a = new Cliente(); 
+                String clientes []=new String[20];
+            }
+            
+           
+      
+//tratamento de exçeções                    
+            }while(A!=5); { 
+               
+                	System.out.println("Opção inválida!");	
+                
+            }
+            }
+    }
