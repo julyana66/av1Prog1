@@ -1,0 +1,202 @@
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Scanner;
+
+public class Cliente {
+	
+	 private  String nome;
+	    private  String end;
+	    private  int telefone;
+	    private  int idade;
+	    private  int rg;
+	    private  int cpf;
+	    private String carroAlugado;
+	    private  int dataDoAluguel;
+	    private  int dataDaDevolucao;
+        ArrayList<Cliente> listaCliente;
+
+	     
+	    Cliente ( String  nome , String  end , int  telefone , int  idade , int  rg , int  cpf , String  carroAlugado ,
+	              int  dataDoAluguel , int  dataDaDevolucao )
+	    {
+	        this.nome =nome;
+	        this.end= end;
+	        this.telefone= telefone;
+	        this.idade = idade;
+	        this.rg=rg;
+	        this.cpf=cpf;
+	        this.carroAlugado =carroAlugado;
+	        this.dataDoAluguel=dataDoAluguel;
+	        this.dataDaDevolucao = dataDaDevolucao;
+	        
+	        ArrayList<Cliente> listaCliente = new ArrayList<Cliente>();
+
+	    }
+
+
+	    public  String  getNome ()
+	    {
+	        return nome;
+	    }
+
+
+	    public  void  setNome ( String  nome )
+	    {
+	        this.nome = nome;
+	    }
+
+
+	    public  String  getEndereco ()
+	    {
+	        return end;
+	    }
+
+
+	    public  void  setEndereco ( String  endereco )
+	    {
+	        this.end = endereco;
+	    }
+
+
+	    public int  getTelefone ()
+	    {
+	        return telefone;
+	    }
+
+
+	    public void setTelefone(int telefone)
+	    {
+	        this.telefone = telefone;
+	    }
+
+
+	    public  int  getIdade ()
+	    {
+	        return idade;
+	    }
+
+
+	    public  void  setIdade ( int  idade )
+	    {
+	        this.idade = idade;
+	    }
+
+
+	    public  int  getRg ()
+	    {
+	        return rg;
+	    }
+
+
+	    public  void  setRg ( int  rg )
+	    {
+	        this. rg = rg;
+	    }
+
+
+	    public  int  getCpf ()
+	    {
+	        return cpf;
+	    }
+
+
+	    public  void  setCpf ( int  cpf )
+	    {
+	        this.cpf = cpf;
+	    }
+
+
+	    public  String  getCarroAlugado ()
+	    {
+	        return carroAlugado;
+	    }
+
+
+	    public  void  setCarroAlugado ( String  carroAlugado )
+	    {
+	        this.carroAlugado = carroAlugado;
+	    }
+
+
+	    public  int  getDataDoAluguel ()
+	    {
+	        return dataDoAluguel;
+	    }
+
+
+	    public  void  setDataDoAluguel ( int  dataDoAluguel )
+	    {
+	        this.dataDoAluguel = dataDoAluguel;
+	    }
+
+
+	    public  int  getDataDaDevolucao ()
+	    {
+	        return dataDaDevolucao;
+	    }
+
+
+	    public  void  setDataDaDevolucao ( int  dataDaDevolucao )
+	    {
+	        this. dataDaDevolucao = dataDaDevolucao;
+	    }
+
+	    
+	    public ArrayList<Cliente> getListaCliente() {
+			return listaCliente;
+		}
+
+		public void setListCliente(ArrayList<Cliente> listaCliente) {
+			this.listaCliente = listaCliente;
+		}
+		
+		void cadastrarCliente() {
+			
+				Scanner sc1 = new Scanner(System.in);
+				Scanner sc = new Scanner(System.in);
+				sc.nextLine();
+				sc1.nextInt();
+				
+				
+	           	System.out.println ("Digite o nome:");
+	           	this.nome = sc.nextLine ();
+	            System.out.println ("Digite o cpf:");
+	            this.cpf = sc1.nextInt ();
+	            System.out.println ("Digite o endereço:");
+	            this.end = sc.nextLine ();
+	            System.out.println ("Digite o RG:");
+	            this.rg = sc1.nextInt ();
+	            System.out.println ("digite seu telefone:");
+	            this.telefone = sc.nextInt ();
+	            System.out.println ("qual sua idade:");
+	            this.idade = sc1.nextInt ();
+	            
+	            
+	    }
+		
+		
+		public void addCliente (Cliente cliente) {
+			listaCliente.add (cliente);
+		}
+
+		void validarNome()
+	    {
+	    	if (nome.equals(" "));
+	    		System.out.println("nome inválido");
+	     	
+	    }
+
+	    void validarCpf()
+	    {
+	    	if (cpf!=11);
+	    	System.out.println("CPF inválido");
+	    }
+	    	
+	    void alugarCarro() {
+	    	
+	    
+	    }
+	    
+	    
+
+}
